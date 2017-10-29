@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="36dp"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    tools:context="com.example.android.businessappudacity.MainActivity"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="194dp"
+        android:src="@drawable/Building" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="12dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:text="Google Inc"
+        android:/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:paddingTop="12dp">
+        <ImageView
+            android:src="@drawable/phone"
+            android:layout_width="9dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.31" />
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dp"
+            android:textSize="18dp"
+            android:text="21 test street, california, 2010, US" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:paddingTop="12dp">
+
+        <ImageView
+            android:src="@drawable/location"
+            android:layout_width="9dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.06" />
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:textSize="18dp"
+            android:text="(304) 382 293" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="wrap_content"
+        android:layout_height="166dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp"
+        android:textSize="18dp"
+        android:text="Opening hours: \nMo-Fr: 09.00 - 18.00\nSat: 09.00 - 12.00 \nSun: Closed \nWe are a Design company focusing on users needs and designs for tomorrow"
+        android:/>
+
+</LinearLayout>
